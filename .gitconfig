@@ -1,0 +1,21 @@
+[core]
+  excludesfile = $HOME/.gitignore_global
+
+[alias]
+  st = status
+  df = diff
+  co = checkout
+  ci = commit
+  br = branch
+  svnpull = svn rebase
+  svnpush = svn dcommit
+  b = branch
+  r = rebase
+
+[user]
+  name = Gabriel Slama
+  email = contact@griable.com
+
+[color]
+  ui = true
+
