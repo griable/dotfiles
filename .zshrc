@@ -21,3 +21,8 @@ antigen apply
 # Set default editor
 export EDITOR=vim
 export LANG=en_US.UTF-8
+
+# Load local configuration if found
+if [ -f ~/.zshrc-local ]; then
+  source .zshrc-local
+fi
