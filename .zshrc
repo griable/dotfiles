@@ -1,6 +1,7 @@
 # Load Antigen
 source $(brew --prefix)/share/antigen/antigen.zsh
 
+# Set Antigen default repo
 antigen use oh-my-zsh
 
 # Antigen Bundles
@@ -20,7 +21,10 @@ antigen apply
 
 # Set default editor
 export EDITOR=vim
+
+# Set locales
 export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Load local configuration if found
 if [ -f ~/.zshrc-local ]; then

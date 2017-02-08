@@ -24,7 +24,9 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'valloric/youcompleteme', { 'do': './install.py --tern-completer' }
 call plug#end()
 
-filetype plugin indent on
+" Enable filetype plugins
+filetype plugin on
+filetype indent on
 
 set cursorline
 set expandtab
@@ -32,6 +34,7 @@ set number
 set shiftwidth=2
 set tabstop=2
 
+" Set mapleader to spacebar
 :let mapleader = " "
 
 " NERDTree configuration
