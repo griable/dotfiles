@@ -19,5 +19,5 @@ antigen bundle zsh-users/zsh-history-substring-search
 antigen apply
 
 # Set default editor
-EDITOR=vim
-LANG=en_US.UTF-8
+export EDITOR=vim
+export LANG=en_US.UTF-8
