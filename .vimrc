@@ -70,6 +70,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Toggle folds using comma
+nnoremap <,> za
+
 " tmp filed handling
 set backupdir=~/.vim/backup
 set directory=~/.vim/swap
