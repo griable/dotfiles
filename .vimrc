@@ -5,7 +5,7 @@ syntax enable
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin()
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'jacoborus/tender.vim'
+Plug 'eddsteel/vim-vimbrant'
 Plug 'junegunn/vim-easy-align'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'lumiliet/vim-twig'
@@ -79,4 +79,4 @@ set undodir=~/.vim/undo
 set iskeyword+=-
 
 set guifont=Meslo\ LG\ L\ DZ\ for\ Powerline:h14
-colorscheme tender
+colorscheme vimbrant
