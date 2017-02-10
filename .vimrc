@@ -91,3 +91,6 @@ set undodir=~/.vim/undo
 set iskeyword+=-
 
 colorscheme vimbrant
+
+set macligatures
+set guifont=Fira\ Code:h14
