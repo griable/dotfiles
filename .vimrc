@@ -85,5 +85,4 @@ set undodir=~/.vim/undo
 " Autocomplete hyphens
 set iskeyword+=-
 
-set guifont=Meslo\ LG\ L\ DZ\ for\ Powerline:h14
 colorscheme vimbrant
