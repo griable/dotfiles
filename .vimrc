@@ -73,6 +73,10 @@ nnoremap <C-H> <C-W><C-H>
 " Toggle folds using comma
 nnoremap <,> za
 
+" Quick edit VIMRC
+nnoremap <Leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <Leader>sv :source $MYVIMRC<CR>
+
 " tmp filed handling
 set backupdir=~/.vim/backup
 set directory=~/.vim/swap
