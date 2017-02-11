@@ -62,7 +62,7 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " ctrl p search options
-let g:ctrlp_custom_ignore = '\v[\/]\.(.git|.hg|.svn|public|vendor|node_modules)$'
+let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|(node_modules|public|vendors?))$'
 
 " Easier split navigation
 nnoremap <C-J> <C-W><C-J>
