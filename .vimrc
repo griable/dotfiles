@@ -5,7 +5,6 @@ syntax enable
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin()
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'eddsteel/vim-vimbrant'
 Plug 'junegunn/vim-easy-align'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'lumiliet/vim-twig'
@@ -14,6 +13,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'pangloss/vim-javascript'
 Plug 'sirver/ultisnips'
 Plug 'scrooloose/nerdtree'
+Plug 'tomasr/molokai'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -93,4 +93,4 @@ set undodir=~/.vim/undo
 " Autocomplete hyphens
 set iskeyword+=-
 
-colorscheme vimbrant
+colorscheme molokai
