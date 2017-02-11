@@ -75,6 +75,9 @@ nnoremap gd :bd<CR>
 nnoremap gp :bp<CR>
 nnoremap gn :bn<CR>
 
+" Quick save
+nnoremap <Leader>s :w<CR>
+
 " Toggle folds using comma
 nnoremap <,> za
 

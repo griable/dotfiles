@@ -4,7 +4,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: '"Fira Mono for Powerline", "Meslo LG L DZ for Powerline", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Fira Code", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.8)',
@@ -25,7 +25,11 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: '',
+    termCSS: `
+       x-screen x-row {
+        font-variant-ligatures: initial;
+      }
+    `,
 
     // set to `true` if you're using a Linux set up
     // that doesn't shows native menus
