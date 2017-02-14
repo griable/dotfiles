@@ -28,5 +28,5 @@ export LC_ALL=en_US.UTF-8
 
 # Load local configuration if found
 if [ -f ~/.zshrc-local ]; then
-  source .zshrc-local
+  source ~/.zshrc-local
 fi
