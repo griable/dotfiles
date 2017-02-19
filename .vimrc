@@ -45,6 +45,9 @@ map <Leader>n :NERDTreeToggle<CR>
 " Airline configuration
 let g:airline#extensions#tabline#enabled = 1
 
+" Workaround YouCompleteMe Python path issue
+let g:ycm_path_to_python_interpreter="/usr/local/bin/python"
+
 if (has("termguicolors"))
  set termguicolors
 endif
