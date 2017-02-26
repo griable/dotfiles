@@ -1,23 +1,25 @@
-# Load Antigen
-source $(brew --prefix)/share/antigen/antigen.zsh
+# Load zplug
+source $(brew --prefix)/opt/zplug/init.zsh
 
-# Set Antigen default repo
-antigen use oh-my-zsh
+# zplug Bundles
+zplug plugins/common-aliases, from:oh-my-zsh
+zplug plugins/git, from:oh-my-zsh
 
-# Antigen Bundles
-antigen bundle brew
-antigen bundle git
-antigen bundle common-aliases
+zplug 'mafredri/zsh-async'
+zplug 'rupa/z', use:'*.sh'
+zplug 'sindresorhus/pure'
+zplug 'zsh-users/zsh-completions'
+zplug 'zsh-users/zsh-syntax-highlighting'
+zplug 'zsh-users/zsh-history-substring-search'
 
-antigen bundle mafredri/zsh-async
-antigen bundle rupa/z
-antigen bundle sindresorhus/pure
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-history-substring-search
+# zplug check returns true if all packages are installed
+# # Therefore, when it returns false, run zplug install
+if ! zplug check; then
+  zplug install
+fi
 
-# Tell antigen that you're done.
-antigen apply
+# Tell zplug that you're done.
+zplug load
 
 # Set default editor
 export EDITOR=vim
