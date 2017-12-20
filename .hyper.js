@@ -81,12 +81,16 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: false,
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+    hyperlinks: {
+      defaultBrowser: true,
+      clickAction: 'ignore' 
+    }
   },
 
   // a list of plugins to fetch and install from npm
@@ -96,9 +100,12 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
+    'hyperborder',
     'hyper-blink',
+    'hypercwd',
     'hyperlinks',
-    'hyper-snazzy'
+    'hyper-snazzy',
+    'hyper-search'
   ],
 
   // in development, you can create a directory under

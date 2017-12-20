@@ -4,6 +4,7 @@ source $(brew --prefix)/opt/zplug/init.zsh
 # zplug Bundles
 zplug plugins/common-aliases, from:oh-my-zsh
 zplug plugins/git, from:oh-my-zsh
+zplug plugins/git-flow-avh, from:oh-my-zsh
 
 zplug 'mafredri/zsh-async'
 zplug 'rupa/z', use:'*.sh'
@@ -32,3 +33,8 @@ export LC_ALL=en_US.UTF-8
 if [ -f ~/.zshrc-local ]; then
   source ~/.zshrc-local
 fi
+
+# Custom aliases
+alias gmd='git fetch --prune && git branch --merged=origin/develop|grep "\b/\b"|xargs git branch -d'
+alias gmdd='git branch --merged=origin/develop|grep "\b/\b"|xargs git branch -d'
+

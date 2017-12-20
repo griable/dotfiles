@@ -68,6 +68,8 @@ nmap ga <Plug>(EasyAlign)
 
 " ctrl p search options
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|public|vendor|target|dist)|(\.(swp|ico|git|svn))$'
+" let g:ctrlp_root_markers = ['']
+let g:ctrlp_working_path_mode = ''
 
 
 " Easier split navigation
